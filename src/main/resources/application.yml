@@ -1,0 +1,18 @@
+server:
+  port: 80
+spring:
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/Probite
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    generate-ddl : true
+    properties:
+      hibernate:
+        ddl-auto: create
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: public
+
+
